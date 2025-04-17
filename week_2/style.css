@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f6f6f6;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.left-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#iphone {
+  width: 520px;
+  height: 720px;
+  margin: 96px 0 96px 216px;
+}
+
+.right-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 50px;
+}
+
+.main {
+  width: 416px;
+  border: 1px solid #cccccc;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+}
+
+.main-img {
+  width: 200px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.input-box {
+  width: 320px;
+  margin-bottom: 12px;
+}
+
+.input-id,
+.input-pw {
+  width: 100%;
+  border-radius: 25px;
+  padding: 12px 15px 12px 50px;
+  background-repeat: no-repeat;
+  background-position: 20px center;
+  border: 1px solid #ccc;
+}
+
+.input-id {
+  background-image: url('img/mail-2.png');
+}
+
+.input-pw {
+  background-image: url('img/lock.png');
+}
+
+.login-btn {
+  width: 320px;
+  height: 44px;
+  background-color: #b2ddff;
+  border-radius: 30px;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  margin-top: 10px;
+}
+
+.divider {
+  color: #7f7f7f;
+  margin: 13px 0 13px 0;
+  font-size: 16px;
+  text-align: center;
+}
+
+.kakao-btn {
+  width: 320px;
+  height: 44px;
+  background-color: #f8d706;
+  margin-bottom: 20px;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+}
+
+.forgot {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #7f7f7f;
+  text-align: center;
+}
+
+.question {
+  background-color: #fff;
+  color: #7f7f7f;
+  margin-top: 20px;
+  width: 416px;
+  height: 86px;
+  font-size: 14px;
+  border: 1px solid #cccccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.question a {
+  color: #2e90fa;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+.download {
+  margin-top: 20px;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  gap: 10px;
+}
+
+.download p {
+  color: #7f7f7f;
+}
+
+.download-icons {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+}
