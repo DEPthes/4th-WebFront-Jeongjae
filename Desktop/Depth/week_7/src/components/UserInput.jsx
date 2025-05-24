@@ -1,6 +1,7 @@
 import { useState } from 'react';
 
-export default function UserInput({ onChange, userInput }) {
+export default function UserInput({ onChange, userInput, onReset }) {
+  //추가
   return (
     <section id="user-input">
       <div className="input-group">
@@ -46,6 +47,11 @@ export default function UserInput({ onChange, userInput }) {
             onChange={(event) => onChange('duration', event.target.value)}
           />
         </p>
+      </div>
+      <div className="center">
+        <button type="button" id="button" onClick={onReset}>
+          Reset
+        </button>
       </div>
     </section>
   );
