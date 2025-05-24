@@ -1,0 +1,39 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.top {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.calculator {
+  background-color: #ccc;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+}
+.number {
+  width: 100%;
+  height: 50px;
+}
+.clear {
+  width: 60px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.buttons {
+  display: grid; /*4X4 그리드 모양 */
+  grid-template-columns: repeat(4, 1fr); /*버튼들을 4열 배치*/
+  gap: 10px;
+}
+button {
+  background-color: black;
+  padding: 20px;
+  font-size: 22px;
+  cursor: pointer;
+  color: yellow;
+}
