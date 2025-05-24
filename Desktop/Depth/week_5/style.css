@@ -1,0 +1,30 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background: linear-gradient(to right, #7b91b2, #46bdc3);
+  padding: 40px;
+}
+#weather-box {
+  background: white;
+  padding: 20px;
+  margin-top: 20px;
+  display: inline-block;
+  border-radius: 10px;
+}
+img {
+  width: 80px;
+}
+input {
+  padding: 8px;
+  width: 200px;
+  border-radius: 5px;
+  border: none;
+}
+button {
+  padding: 8px 12px;
+  border: none;
+  background: blue;
+  color: white;
+  border-radius: 5px;
+  margin-left: 5px;
+}
