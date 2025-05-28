@@ -2,6 +2,8 @@ import { useState } from 'react';
 
 export default function UserInput({ onChange, userInput, onReset }) {
   //추가
+  const isInvalid = (value) => isNaN(value) || value < 0;
+  //추가
   return (
     <section id="user-input">
       <div className="input-group">
@@ -15,6 +17,9 @@ export default function UserInput({ onChange, userInput, onReset }) {
               onChange('initialInvestment', event.target.value)
             }
           />
+          {isInvalid(userInput.initialInvestment) && (
+            <span className="error-text">Must be 0 or more</span>
+          )}
         </p>
         <p>
           <label>Annual Investment</label>
@@ -26,6 +31,9 @@ export default function UserInput({ onChange, userInput, onReset }) {
               onChange('annualInvestment', event.target.value)
             }
           />
+          {isInvalid(userInput.annualInvestment) && (
+            <span className="error-text">Must be 0 or more</span>
+          )}
         </p>
       </div>
       <div className="input-group">
@@ -37,15 +45,21 @@ export default function UserInput({ onChange, userInput, onReset }) {
             value={userInput.expectedReturn}
             onChange={(event) => onChange('expectedReturn', event.target.value)}
           />
+          {isInvalid(userInput.expectedReturn) && (
+            <span className="error-text">Must be 0 or more</span>
+          )}
         </p>
         <p>
           <label>Duration</label>
           <input
             type="number"
             required
-            value={UserInput.duration}
+            value={userInput.duration}
             onChange={(event) => onChange('duration', event.target.value)}
           />
+          {isInvalid(userInput.duration < 1) && (
+            <span className="error-text">Must be 1 or more</span>
+          )}
         </p>
       </div>
       <div className="center">

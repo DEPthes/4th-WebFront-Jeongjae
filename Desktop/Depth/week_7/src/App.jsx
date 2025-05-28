@@ -12,7 +12,7 @@ const DEFAULT_INPUT = {
 };
 
 function App() {
-  const [userInput, setUserInput] = useState(DEFAULT_INPUT);
+  const [userInput, setUserInput] = useState(DEFAULT_INPUT); //추가
 
   const inputIsValid = userInput.duration >= 1;
 
@@ -35,7 +35,7 @@ function App() {
       <UserInput
         userInput={userInput}
         onChange={handleChange}
-        onReset={handleReset}
+        onReset={handleReset} //추가
       />
       {!inputIsValid && (
         <p className="center">Please enter a duration greater than zero.</p>
